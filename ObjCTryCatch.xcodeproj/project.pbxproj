@@ -7,31 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A8C12231CA3926000461811 /* ObjCTryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C12221CA3926000461811 /* ObjCTryCatch.m */; };
+		1A8C127D1CA3A19E00461811 /* TestObjCTryCatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C127C1CA3A19E00461811 /* TestObjCTryCatch.swift */; };
 		1ABBADA61CA335CB00DAB744 /* ObjCTryCatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ABBADA51CA335CB00DAB744 /* ObjCTryCatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1ABBADAD1CA335CB00DAB744 /* ObjCTryCatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABBADA21CA335CB00DAB744 /* ObjCTryCatch.framework */; };
-		1ABBADB21CA335CB00DAB744 /* ObjCTryCatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBADB11CA335CB00DAB744 /* ObjCTryCatchTests.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1ABBADAE1CA335CB00DAB744 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1ABBAD991CA335CB00DAB744 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1ABBADA11CA335CB00DAB744;
-			remoteInfo = ObjCTryCatch;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		1A8C12221CA3926000461811 /* ObjCTryCatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCTryCatch.m; sourceTree = "<group>"; };
+		1A8C12781CA3A19E00461811 /* TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A8C127C1CA3A19E00461811 /* TestObjCTryCatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObjCTryCatch.swift; sourceTree = "<group>"; };
+		1A8C127E1CA3A19E00461811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ABBADA21CA335CB00DAB744 /* ObjCTryCatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjCTryCatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABBADA51CA335CB00DAB744 /* ObjCTryCatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCTryCatch.h; sourceTree = "<group>"; };
 		1ABBADA71CA335CB00DAB744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1ABBADAC1CA335CB00DAB744 /* ObjCTryCatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjCTryCatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1ABBADB11CA335CB00DAB744 /* ObjCTryCatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCTryCatchTests.m; sourceTree = "<group>"; };
-		1ABBADB31CA335CB00DAB744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1A8C12751CA3A19E00461811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1ABBAD9E1CA335CB00DAB744 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,22 +37,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1ABBADA91CA335CB00DAB744 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1ABBADAD1CA335CB00DAB744 /* ObjCTryCatch.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A8C127B1CA3A19E00461811 /* ObjCTryCatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A8C127C1CA3A19E00461811 /* TestObjCTryCatch.swift */,
+				1A8C127E1CA3A19E00461811 /* Info.plist */,
+			);
+			name = ObjCTryCatchTests;
+			path = TestTests;
+			sourceTree = "<group>";
+		};
 		1ABBAD981CA335CB00DAB744 = {
 			isa = PBXGroup;
 			children = (
 				1ABBADA41CA335CB00DAB744 /* ObjCTryCatch */,
-				1ABBADB01CA335CB00DAB744 /* ObjCTryCatchTests */,
+				1A8C127B1CA3A19E00461811 /* ObjCTryCatchTests */,
 				1ABBADA31CA335CB00DAB744 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				1ABBADA21CA335CB00DAB744 /* ObjCTryCatch.framework */,
-				1ABBADAC1CA335CB00DAB744 /* ObjCTryCatchTests.xctest */,
+				1A8C12781CA3A19E00461811 /* TestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,17 +73,9 @@
 			children = (
 				1ABBADA51CA335CB00DAB744 /* ObjCTryCatch.h */,
 				1ABBADA71CA335CB00DAB744 /* Info.plist */,
+				1A8C12221CA3926000461811 /* ObjCTryCatch.m */,
 			);
 			path = ObjCTryCatch;
-			sourceTree = "<group>";
-		};
-		1ABBADB01CA335CB00DAB744 /* ObjCTryCatchTests */ = {
-			isa = PBXGroup;
-			children = (
-				1ABBADB11CA335CB00DAB744 /* ObjCTryCatchTests.m */,
-				1ABBADB31CA335CB00DAB744 /* Info.plist */,
-			);
-			path = ObjCTryCatchTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +92,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1A8C12771CA3A19E00461811 /* TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A8C12821CA3A19E00461811 /* Build configuration list for PBXNativeTarget "TestTests" */;
+			buildPhases = (
+				1A8C12741CA3A19E00461811 /* Sources */,
+				1A8C12751CA3A19E00461811 /* Frameworks */,
+				1A8C12761CA3A19E00461811 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestTests;
+			productName = TestTests;
+			productReference = 1A8C12781CA3A19E00461811 /* TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1ABBADA11CA335CB00DAB744 /* ObjCTryCatch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1ABBADB61CA335CB00DAB744 /* Build configuration list for PBXNativeTarget "ObjCTryCatch" */;
@@ -118,37 +127,21 @@
 			productReference = 1ABBADA21CA335CB00DAB744 /* ObjCTryCatch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1ABBADAB1CA335CB00DAB744 /* ObjCTryCatchTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1ABBADB91CA335CB00DAB744 /* Build configuration list for PBXNativeTarget "ObjCTryCatchTests" */;
-			buildPhases = (
-				1ABBADA81CA335CB00DAB744 /* Sources */,
-				1ABBADA91CA335CB00DAB744 /* Frameworks */,
-				1ABBADAA1CA335CB00DAB744 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1ABBADAF1CA335CB00DAB744 /* PBXTargetDependency */,
-			);
-			name = ObjCTryCatchTests;
-			productName = ObjCTryCatchTests;
-			productReference = 1ABBADAC1CA335CB00DAB744 /* ObjCTryCatchTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1ABBAD991CA335CB00DAB744 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = jbrooks;
 				TargetAttributes = {
-					1ABBADA11CA335CB00DAB744 = {
+					1A8C12771CA3A19E00461811 = {
 						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 1A8C12641CA3A19E00461811;
 					};
-					1ABBADAB1CA335CB00DAB744 = {
+					1ABBADA11CA335CB00DAB744 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -159,6 +152,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 1ABBAD981CA335CB00DAB744;
 			productRefGroup = 1ABBADA31CA335CB00DAB744 /* Products */;
@@ -166,20 +160,20 @@
 			projectRoot = "";
 			targets = (
 				1ABBADA11CA335CB00DAB744 /* ObjCTryCatch */,
-				1ABBADAB1CA335CB00DAB744 /* ObjCTryCatchTests */,
+				1A8C12771CA3A19E00461811 /* TestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1ABBADA01CA335CB00DAB744 /* Resources */ = {
+		1A8C12761CA3A19E00461811 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1ABBADAA1CA335CB00DAB744 /* Resources */ = {
+		1ABBADA01CA335CB00DAB744 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,32 +183,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1A8C12741CA3A19E00461811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8C127D1CA3A19E00461811 /* TestObjCTryCatch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1ABBAD9D1CA335CB00DAB744 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1ABBADA81CA335CB00DAB744 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1ABBADB21CA335CB00DAB744 /* ObjCTryCatchTests.m in Sources */,
+				1A8C12231CA3926000461811 /* ObjCTryCatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		1ABBADAF1CA335CB00DAB744 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1ABBADA11CA335CB00DAB744 /* ObjCTryCatch */;
-			targetProxy = 1ABBADAE1CA335CB00DAB744 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
+		1A8C12831CA3A19E00461811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jbrooks.TestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test.app/Test";
+			};
+			name = Debug;
+		};
+		1A8C12841CA3A19E00461811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jbrooks.TestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test.app/Test";
+			};
+			name = Release;
+		};
 		1ABBADB41CA335CB00DAB744 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -254,7 +266,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -295,6 +307,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -335,29 +348,17 @@
 			};
 			name = Release;
 		};
-		1ABBADBA1CA335CB00DAB744 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ObjCTryCatchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jbrooks.ObjCTryCatchTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		1ABBADBB1CA335CB00DAB744 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ObjCTryCatchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jbrooks.ObjCTryCatchTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1A8C12821CA3A19E00461811 /* Build configuration list for PBXNativeTarget "TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A8C12831CA3A19E00461811 /* Debug */,
+				1A8C12841CA3A19E00461811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1ABBAD9C1CA335CB00DAB744 /* Build configuration list for PBXProject "ObjCTryCatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -374,14 +375,7 @@
 				1ABBADB81CA335CB00DAB744 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		1ABBADB91CA335CB00DAB744 /* Build configuration list for PBXNativeTarget "ObjCTryCatchTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1ABBADBA1CA335CB00DAB744 /* Debug */,
-				1ABBADBB1CA335CB00DAB744 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
