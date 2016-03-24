@@ -3,6 +3,12 @@ Simple utility that allows catching Objective C Exceptions in Swift
 
 This utility converts Objective C exeption throwing blocks into swift-style throwing block.
 
+#Installation
+with Carthage:
+    
+    github "jonbrooks/ObjCTryCatch" "master"
+
+
 #Usage
 For blocks that don't return anything:
     
